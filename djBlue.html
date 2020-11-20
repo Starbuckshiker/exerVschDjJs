@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <h1>Do you like music?</h1>
     <link rel="stylesheet" href= "djyellow.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to be a Color DJ</title>
 </head>
-<body>
+<body onwheel="scrollColor('orange')">
+    <div class="contianer" id="container">
+        <div class="child" id="square" onmouseover="hoverColor('blue')" onmouseout="defaultColor()" onmousedown="leftClickColr('red')" onmouseup="upclickColor('yellow')" ondblclick="doubleColor('green')"></div>
+    </div>    
+    <p>The square's color changes based on the mood of the mouse:
+
+        Blue when the mouse sad. 
+        Red when the mouse angry.
+        Yellow when the mouse is feeling light hearted.
+        Green when the mouse is feeling sick.
+        Orange when the mouse is tyring to run away.
+    </p>
     <div class="DJ"></div> 
     <script src="djred.js"></script>
 </body>

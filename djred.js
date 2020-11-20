@@ -1,11 +1,26 @@
 
-    var div =  
-        document.querySelector(".DJ"); 
-  
-    div.addEventListener( 
-        "mousemove", function (e) { 
-        x = e.offsetX; 
-        y = e.offsetY; 
-        div.style.backgroundColor  
-            = `rgb(${x}, ${y}, ${x - y})`; 
-    }); 
+    var sqaure = document.getElementById("square");
+    var orginalColor = window.getComputedStyle(sqaure).backgroundColor;
+    console.log("this");
+
+    function hoverColor(color) {
+        sqaure.style.backgroundColor = color;
+    }
+    function leftClickColor(color) {
+        sqaure.style.backgroundColor = color;
+    }
+    function defaultColor(color) {
+        sqaure.style.backgroundColor = originalColor;
+    }
+    function scrollColor(color) {
+        sqaure.style.backgroundColor = color;
+    }
+    function upClickColor(color) {
+        sqaure.style.backgroundColor = color;
+    }
+    function doubleColor(color) {
+        sqaure.style.backgroundColor = color;
+    }
+    function defaultColor(color) {
+        sqaure.style.backgroundColor = orginalColor;
+    }
